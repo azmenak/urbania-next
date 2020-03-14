@@ -1,0 +1,63 @@
+export const description = (
+  <>
+    <p>
+      At Urbania Flooring, urban style is our identity we embrace it and are
+      guided by the zeitgeist of all that it means to be “Urban” in today’s
+      modern world.
+    </p>
+    <p>
+      We strive to create a product that will resonate within the design
+      community; professionals as well as those with the talent and creativity
+      to create their own beautiful spaces. The Sublime Collection features 8
+      unique floors, from the rich brown tones of double smoked White Oak to the
+      luxurious surface textures created by manually scrapping and distressing
+      one plank at a time, we are confident that the Urbania Sublime collection
+      can be that indispensable resource at the heart of your design
+      inspirations.
+    </p>
+    <p>
+      The Sublime Collection stands alone in the market as a ¾″ thick, 6 foot
+      long and 7.5 inch wide engineered plank, we feature a ⅙″ dry sawn wear
+      layer &amp; an exceptional length average, 80% full length planks. that
+      will stand the test of time. You will enjoy the beauty of an elegant
+      hardwood floor, with a construction designed to stand the test of time.
+      element with the stability only possible with the “Engineered in Germany”
+      dry sawn cross grain construction.
+    </p>
+  </>
+);
+
+export const dimensions = {
+  length: {
+    metric: "1900 mm",
+    imperial: "6'3\""
+  },
+  width: {
+    metric: "190 mm",
+    imperial: '7 ½ "'
+  },
+  thickness: {
+    metric: "19 mm",
+    imperial: '¾ "'
+  }
+};
+
+export const construction = {
+  top: "3.5 mm wear dry sawn hardwood",
+  core: "15.5 mm Siberian Larch Plywood"
+};
+
+export const installation = [
+  "Full spread glue down",
+  "Glue assist nail down",
+  "T&G perimeter glue — float"
+];
+
+export const technical = {
+  moisture: "6-9%",
+  assembly: "Precision tongue & groove",
+  packaging: {
+    metric: 2.166,
+    imperial: 23.33
+  }
+};
