@@ -11,14 +11,17 @@ import {
   skus,
 } from "../data/sublime";
 
+const LEFT_COLUMN = 240;
+const RIGHT_COLUMN = 400;
+
 const Sublime = () => (
   <Layout>
-    <p>Sublime Page</p>
-    <h2>Specs</h2>
-    <dl>
-      <dt>Dimentions</dt>
-      <dd>
-        <div className="grid">
+    <div className="page-grid">
+      <h2>Specs</h2>
+      <h1>URBANIA Sublime Product Collection</h1>
+      <div>
+        <div className="spec-grid">
+          <div className="header">Dimentions</div>
           <div>Width</div>
           <div>
             {dimensions.width.metric} ({dimensions.width.imperial})
@@ -31,32 +34,22 @@ const Sublime = () => (
           <div>
             {dimensions.thickness.metric} ({dimensions.thickness.imperial})
           </div>
-        </div>
-      </dd>
 
-      <dt>Construction</dt>
-      <dd>
-        <div className="grid">
+          <div className="header">Construction</div>
           <div>Top Layer</div>
           <div>{construction.top}</div>
 
           <div>Core Material</div>
           <div>{construction.core}</div>
-        </div>
-      </dd>
 
-      <dt>Installation</dt>
-      <dd>
-        <ul>
-          {installation.map((item) => (
-            <li key={item}>{item}</li>
-          ))}
-        </ul>
-      </dd>
+          <div className="header">Installation</div>
+          <ul>
+            {installation.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
 
-      <dt>Technical Details</dt>
-      <dd>
-        <div className="grid">
+          <div className="header">Technical Details</div>
           <div>Moisture Content</div>
           <div>{technical.moisture}</div>
 
@@ -69,22 +62,64 @@ const Sublime = () => (
             <br />({technical.packaging.imperial} ft<sup>2</sup>)
           </div>
         </div>
-      </dd>
-    </dl>
-    <div>
-      <h1>URBANIA Sublime Product Collection</h1>
-      {description}
+      </div>
+      <div>
+        {description}
 
-      <h2>Available Colours</h2>
-      {skus.map((sku) => (
-        <SublimeColor key={sku.id} {...sku} />
-      ))}
+        <h2>Available Colours</h2>
+        {skus.map((sku) => (
+          <SublimeColor key={sku.id} {...sku} />
+        ))}
+      </div>
     </div>
     <style jsx>{`
-      .grid {
+      .page-grid {
+        display: grid;
+        grid-template-columns: minmax(${LEFT_COLUMN}px, min-content) minmax(
+            ${RIGHT_COLUMN}px,
+            max-content
+          );
+        grid-column-gap: 2rem;
+      }
+
+      h2 {
+        align-self: flex-end;
+        font-weight: 100;
+      }
+
+      h1 {
+        font-weight: 100;
+      }
+
+      @media (max-width: ${LEFT_COLUMN + RIGHT_COLUMN + 16 + 70}px) {
+        .page-grid {
+          display: block;
+        }
+
+        h2 {
+          display: none;
+        }
+      }
+
+      .spec-grid {
         display: grid;
         grid-template-columns: auto auto;
-        grid-gap: 1rem;
+        grid-column-gap: 1rem;
+        grid-row-gap: 0.5rem;
+      }
+
+      .spec-grid .header {
+        grid-column: 1/-1;
+        margin-top: 1rem;
+        color: #bf824d;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+
+      ul {
+        padding-inline-start: 1rem;
+        margin: 0;
+        grid-column: 1/-1;
       }
     `}</style>
   </Layout>
@@ -158,7 +193,7 @@ const SublimeColor: React.FC<typeof skus[0]> = (sku) => {
         }
 
         .img-container img {
-          width: 100%;
+          max-width: 100%;
           transform: scale(1);
           transition: transform 0.5s ease-out;
         }
