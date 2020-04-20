@@ -1,3 +1,5 @@
+import { GRADES } from "../constants";
+
 export const description = (
   <>
     <p>
@@ -30,27 +32,27 @@ export const description = (
 export const dimensions = {
   length: {
     metric: "1900 mm",
-    imperial: "6'3\""
+    imperial: "6'3\"",
   },
   width: {
     metric: "190 mm",
-    imperial: '7 ½ "'
+    imperial: '7 ½ "',
   },
   thickness: {
     metric: "19 mm",
-    imperial: '¾ "'
-  }
+    imperial: '¾ "',
+  },
 };
 
 export const construction = {
   top: "3.5 mm wear dry sawn hardwood",
-  core: "15.5 mm Siberian Larch Plywood"
+  core: "15.5 mm Siberian Larch Plywood",
 };
 
 export const installation = [
   "Full spread glue down",
   "Glue assist nail down",
-  "T&G perimeter glue — float"
+  "T&G perimeter glue — float",
 ];
 
 export const technical = {
@@ -58,6 +60,71 @@ export const technical = {
   assembly: "Precision tongue & groove",
   packaging: {
     metric: 2.166,
-    imperial: 23.33
-  }
+    imperial: 23.33,
+  },
 };
+
+export const skus = [
+  {
+    id: "naked-oak",
+    name: "Naked Oak",
+    brightness: 0.9,
+    grade: GRADES.AB,
+    description: `"Invisible finish", designed to appear unfinished and natural with full performance finish.`,
+  },
+  {
+    id: "olive-ebony-gray",
+    name: "Olive Ebony Gray",
+    brightness: 0.2,
+    grade: GRADES.ABC,
+    description: `Brushed back olive gray over contrasting black grain.`,
+  },
+  {
+    id: "warm-oyster",
+    name: "Warm Oyster Gray",
+    brightness: 0.75,
+    grade: GRADES.ABC,
+  },
+  {
+    id: "ivory-clay",
+    name: "Ivory and Clay",
+    brightness: 0.6,
+    grade: GRADES.ABC,
+    description: `Brushed two tone taupe over white grain`,
+  },
+  {
+    id: "calico-lacquer",
+    name: "Calico Brown",
+    brightness: 0.7,
+    grade: GRADES.ABC,
+    description: `Mid-light brown finish, subtle grain pattern.`,
+  },
+  {
+    id: "platinum-lacquer",
+    name: "Platinum Gray",
+    brightness: 0.5,
+    grade: GRADES.ABC,
+    description: `Modern gray finish over subtle contrasting white tones.`,
+  },
+  {
+    id: "dun-taupe",
+    name: "Dun Taupe",
+    brightness: 0.5,
+    grade: GRADES.ABC,
+    description: `Brushed light brown taupe`,
+  },
+  {
+    id: "ebony-brown",
+    name: "Ebony Brown Oak",
+    brightness: 0.3,
+    grade: GRADES.ABC,
+    description: `Coffee brown over dark brown grain, subtle contrast.`,
+  },
+  {
+    id: "ocher-smoked",
+    name: "Ocher Smoked Oak Natural",
+    brightness: 0.4,
+    grade: GRADES.ABC,
+    description: `Single smoked oak natural, with moderate wire brushing`,
+  },
+];

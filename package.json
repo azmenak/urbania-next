@@ -15,20 +15,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mkdirp": "^1.0.3",
-    "next": "^9.2.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "mkdirp": "^1.0.4",
+    "next": "^9.3.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-markdown": "^4.3.1",
-    "sass": "^1.25.1-test.1",
-    "sharp": "^0.24.0",
-    "ts-node": "^8.6.2"
+    "sass": "^1.26.3",
+    "sharp": "^0.25.2",
+    "ts-node": "^8.8.2"
   },
   "devDependencies": {
-    "@types/mkdirp": "^0.5.2",
-    "@types/node": "^13.5.0",
-    "@types/react": "^16.9.19",
+    "@types/mkdirp": "^1.0.0",
+    "@types/node": "^13.13.0",
+    "@types/react": "^16.9.34",
     "@types/sharp": "^0.24.0",
-    "typescript": "^3.7.5"
+    "typescript": "^3.8.3"
   }
 }
