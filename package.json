@@ -9,7 +9,8 @@
     "start": "next start",
     "export": "next export",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "ts-node": "ts-node -O '{\"module\":\"commonjs\"}'"
+    "ts-node": "ts-node -O '{\"module\":\"commonjs\"}'",
+    "create-image-assets": "ts-node -O '{\"module\":\"commonjs\"}' ./scripts/create-image-assets.ts"
   },
   "keywords": [],
   "author": "",

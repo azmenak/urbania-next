@@ -31,22 +31,22 @@ export const description = (
 
 export const dimensions = {
   length: {
-    metric: "1900 mm",
+    metric: "1900mm",
     imperial: "6'3\"",
   },
   width: {
-    metric: "190 mm",
-    imperial: '7 ½ "',
+    metric: "190mm",
+    imperial: '7 ½"',
   },
   thickness: {
-    metric: "19 mm",
-    imperial: '¾ "',
+    metric: "19mm",
+    imperial: '¾"',
   },
 };
 
 export const construction = {
-  top: "3.5 mm wear dry sawn hardwood",
-  core: "15.5 mm Siberian Larch Plywood",
+  top: "3.5mm wear dry sawn hardwood",
+  core: "15.5mm Siberian Larch Plywood",
 };
 
 export const installation = [
