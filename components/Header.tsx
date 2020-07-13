@@ -1,8 +1,13 @@
 import Link from "next/link";
+import Head from "next/head";
 import { COLORS } from "../constants";
 
 const Header = () => (
   <div>
+    <Head>
+      <title>URBANIA</title>
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+    </Head>
     <div>
       <img src="/urbania.svg" />
     </div>
