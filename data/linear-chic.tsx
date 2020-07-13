@@ -3,28 +3,12 @@ import { GRADES } from "../constants";
 export const description = (
   <>
     <p>
-      At Urbania Flooring, urban style is our identity we embrace it and are
-      guided by the zeitgeist of all that it means to be “Urban” in today’s
-      modern world.
-    </p>
-    <p>
-      We strive to create a product that will resonate within the design
-      community; professionals as well as those with the talent and creativity
-      to create their own beautiful spaces. The Sublime Collection features 8
-      unique floors, from the rich brown tones of double smoked White Oak to the
-      luxurious surface textures created by manually scrapping and distressing
-      one plank at a time, we are confident that the Urbania Sublime collection
-      can be that indispensable resource at the heart of your design
-      inspirations.
-    </p>
-    <p>
-      The Sublime Collection stands alone in the market as a ¾″ thick, 6 foot
-      long and 7.5 inch wide engineered plank, we feature a ⅙″ dry sawn wear
-      layer &amp; an exceptional length average, 80% full length planks. that
-      will stand the test of time. You will enjoy the beauty of an elegant
-      hardwood floor, with a construction designed to stand the test of time.
-      element with the stability only possible with the “Engineered in Germany”
-      dry sawn cross grain construction.
+      From concept to execution the Urbania Linear Chic Collection was curated
+      to offer the end user a product produced to meet an impeccable quality
+      standard in combination with finishing options that would appeal to all
+      regions of the world, our ideal customer is one who appreciates the
+      R&amp;Q grain structure and the tone diversity which is an inherent
+      property of an authentic hardwood floor.
     </p>
   </>
 );

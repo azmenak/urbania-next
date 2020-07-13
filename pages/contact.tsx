@@ -17,6 +17,8 @@ const Contact = () => (
       <br />
       <a href="mailto:info@urbaniacanada.com">Email: info@urbaniacanada.com</a>
       <br />
+      <a href="tel:+18883025586">Phone: (888) 302-5586</a>
+      <br />
       <a href="tel:+16138181100">Phone: (613) 818-1100</a>
     </address>
   </Layout>
