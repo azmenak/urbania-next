@@ -1,10 +1,4 @@
-import sharp from "sharp";
-
-interface RenderOptions {
-  width?: number;
-  height?: number;
-  blur?: number;
-}
+import sharp, { ResizeOptions } from "sharp";
 
 interface RenderImageSetOptions {
   /**
@@ -18,7 +12,7 @@ interface RenderImageSetOptions {
   /**
    * Render options
    */
-  options: RenderOptions;
+  options: ResizeOptions & { blur?: number };
   /**
    * Path to the file
    */
@@ -34,7 +28,7 @@ export async function renderImageSets({
   size,
   options,
   path,
-  outpath
+  outpath,
 }: RenderImageSetOptions) {
   if (outpath != null) {
     // ensure ends with '/'
@@ -42,12 +36,7 @@ export async function renderImageSets({
       outpath += "/";
     }
   } else {
-    outpath =
-      path
-        .split("/")
-        .slice(0, -1)
-        .concat("export")
-        .join("/") + "/";
+    outpath = path.split("/").slice(0, -1).concat("export").join("/") + "/";
   }
 
   const image = sharp(path);
@@ -64,12 +53,14 @@ export async function renderImageSets({
   smallImage.resize({
     width: options.width,
     height: options.height,
-    fit: "inside"
+    fit: options.fit || "inside",
+    position: options.position,
   });
   largeImage.resize({
     width: options.width ? options.width * 2 : undefined,
     height: options.height ? options.height * 2 : undefined,
-    fit: "inside"
+    fit: options.fit || "inside",
+    position: options.position,
   });
 
   const operations = [];

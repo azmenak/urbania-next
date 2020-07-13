@@ -2,53 +2,57 @@ export default {
   // Banner for product images
   banner: {
     width: 770,
-    height: 257
+    height: 257,
+    position: "top",
+    fit: "cover",
   },
   // Full width page banner
   "wide-banner": {
     width: 1100,
-    height: 275
+    height: 275,
+    position: "top",
+    fit: "cover",
   },
 
   // For showing full size pictures
   large: {
-    width: 1024
+    width: 1024,
   },
   medium: {
-    width: 770
+    width: 770,
   },
   small: {
-    width: 374
+    width: 374,
   },
 
   // Swatches on the product page
   swatch: {
     width: 85,
-    height: 85
+    height: 85,
   },
   // Small icons for selecting in sidebar
   "small-swatch": {
     width: 59,
-    height: 59
+    height: 59,
   },
 
   // Used in general slideshows
   slide: {
     width: 1100,
-    height: 619
+    height: 619,
   },
 
   // For effects
   "blur-large": {
     width: 1100,
-    blur: 100
+    blur: 100,
   },
   blur: {
     width: 500,
-    blur: 100
+    blur: 100,
   },
 
   feature: {
-    height: 60
-  }
+    height: 60,
+  },
 };
