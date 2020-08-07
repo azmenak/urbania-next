@@ -1,5 +1,3 @@
-import { GRADES } from "../constants";
-
 export const description = (
   <>
     <p>
@@ -18,10 +16,20 @@ export const dimensions = {
     metric: "400mm - 2200mm",
     imperial: '16" - 87"',
   },
-  width: {
-    metric: "152mm or 127mm",
-    imperial: '6" or 5"',
-  },
+  width: [
+    {
+      metric: "152mm",
+      imperial: '6"',
+    },
+    {
+      metric: "127mm",
+      imperial: '5"',
+    },
+    {
+      metric: "100mm",
+      imperial: '4"',
+    },
+  ],
   thickness: {
     metric: "15mm",
     imperial: '⅝"',
@@ -29,7 +37,7 @@ export const dimensions = {
 };
 
 export const construction = {
-  top: "4mm wear dry sawn American Rift &amp; Quartersawn White Oak",
+  top: "4mm wear dry sawn American Rift & Quartersawn White Oak",
   core: "11mm Baltic Birch Plywood",
 };
 
@@ -43,6 +51,11 @@ export const technical = {
   moisture: "6-9%",
   assembly: "Precision tongue & groove",
   packaging: [
+    {
+      label: '4"',
+      metric: 2.2,
+      imperial: 23.67,
+    },
     {
       label: '5"',
       metric: 3.05,

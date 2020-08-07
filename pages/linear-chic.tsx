@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 import Layout from "../components/Layout";
 
@@ -24,11 +24,16 @@ const LinearChic = () => (
           <div className="header">Dimentions</div>
           <div>Width</div>
           <div>
-            {dimensions.width.metric} ({dimensions.width.imperial})
+            {dimensions.width.map((width) => (
+              <React.Fragment key={width.metric}>
+                {width.metric} ({width.imperial})<br />
+              </React.Fragment>
+            ))}
           </div>
           <div>Length</div>
           <div>
-            {dimensions.length.metric} ({dimensions.length.imperial})
+            {dimensions.length.metric}
+            <br />({dimensions.length.imperial})
           </div>
           <div>Thickness</div>
           <div>
@@ -58,16 +63,15 @@ const LinearChic = () => (
 
           <div>Packaging</div>
           <div />
-          <div className="packaging-header">{technical.packaging[0].label}</div>
-          <div>
-            {technical.packaging[0].metric} m<sup>2</sup> per box
-            <br />({technical.packaging[0].imperial} ft<sup>2</sup>)
-          </div>
-          <div className="packaging-header">{technical.packaging[1].label}</div>
-          <div>
-            {technical.packaging[1].metric} m<sup>2</sup> per box
-            <br />({technical.packaging[1].imperial} ft<sup>2</sup>)
-          </div>
+          {technical.packaging.map((packaging) => (
+            <React.Fragment key={packaging.label}>
+              <div className="packaging-header">{packaging.label}</div>
+              <div>
+                {packaging.metric} m<sup>2</sup> per box
+                <br />({packaging.imperial} ft<sup>2</sup>)
+              </div>
+            </React.Fragment>
+          ))}
         </div>
       </div>
       <div>
