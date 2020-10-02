@@ -7,8 +7,10 @@ Source for urbaniacanada.com
 This site uses next.js and is deployed to Vercel
 
 ```
+npm i -g vercel@latest
+
 npm install
-npm run dev # starts the local dev server
+npm run dev
 ```
 
 Deploy new version with
