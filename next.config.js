@@ -1,13 +1,14 @@
 module.exports = {
   exportTrailingSlash: true,
-  exportPathMap: function() {
+  exportPathMap: function () {
     const paths = {
       "/": { page: "/" },
       "/features": { page: "/features" },
       "/sublime": { page: "/sublime" },
-      "/gallery": { page: "/gallery" }
+      "/gallery": { page: "/gallery" },
+      "/linear-chic": { page: "/linear-chic" },
     };
 
     return paths;
-  }
+  },
 };
