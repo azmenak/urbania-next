@@ -7,7 +7,7 @@ const Contact = () => (
     <address>
       1080 Clay Ave
       <br />
-      Unit 3<br />
+      Unit 2<br />
       Burlington, ON
       <br />
       L7L 0A1
