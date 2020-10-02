@@ -18,19 +18,19 @@
   "license": "ISC",
   "dependencies": {
     "mkdirp": "^1.0.4",
-    "next": "^9.3.5",
+    "next": "^9.5.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-markdown": "^4.3.1",
-    "sass": "^1.26.3",
-    "sharp": "^0.25.2",
-    "ts-node": "^8.8.2"
+    "sass": "^1.26.11",
+    "sharp": "^0.25.4",
+    "ts-node": "^8.10.2"
   },
   "devDependencies": {
-    "@types/mkdirp": "^1.0.0",
-    "@types/node": "^13.13.0",
-    "@types/react": "^16.9.34",
+    "@types/mkdirp": "^1.0.1",
+    "@types/node": "^13.13.21",
+    "@types/react": "^16.9.50",
     "@types/sharp": "^0.24.0",
-    "typescript": "^3.8.3"
+    "typescript": "^3.9.7"
   }
 }
